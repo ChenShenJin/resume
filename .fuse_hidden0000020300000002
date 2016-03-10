@@ -31,16 +31,16 @@
 <!-- Prompt IE 7 users to install Chrome Frame -->
 <!--[if lt IE 8]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
-<div class="index animated d2s fadeIn">
-	<div class="act animated d3s fadeIn">
+<div class="index animated sss fadeIn">
+	<div class="act">
 		<div class="pics">
-			<img src="img/index_p4.png" alt="" class="index_p4  animated d3s fadeIn">
-			<img src="img/index_p3.png" alt="" class="index_p3 animated d3s ss fadeInDown">
-			<img src="img/index_p1.png" alt="" class="index_p1 d2s">
-			<img src="img/index_p2.png" alt="" class="index_p2 d2s">
+			<img src="img/index_p4.png" alt="" class="index_p4  animated dss fadeIn">
+			<img src="img/index_p3.png" alt="" class="index_p3 animated dss ss fadeInDown">
+			<img src="img/index_p1.png" alt="" class="index_p1">
+			<img src="img/index_p2.png" alt="" class="index_p2">
 			
 		</div>
-		<div class="menu animated d2s s fadeInUp">
+		<div class="menu animated dss s fadeInUp">
 			<a href="">About Me</a>
 			<a href="" class="m2">Portfolio</a>
 			<a href="" class="m3">Skill Chart</a>

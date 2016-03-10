@@ -25,24 +25,9 @@
   animation-duration: 2s;
 }
 
-.d1s{
+.dss{
   -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
     animation-delay: 1s;
-}
-
-.d2s{
-  -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
-    animation-delay: 2s;
-}
-
-.d3s{
-  -webkit-animation-delay: 3s; /* Chrome, Safari, Opera */
-    animation-delay: 3s;
-}
-
-.d4s{
-  -webkit-animation-delay: 4s; /* Chrome, Safari, Opera */
-    animation-delay: 4s;
 }
 
 .s {
