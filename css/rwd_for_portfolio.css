@@ -1,0 +1,43 @@
+@media only screen and (min-width: 768px) { 
+	.large-header {
+		height: 400px !important;
+	}
+
+	.list__item{ height: 400px !important; padding:0px; min-height:400px;}
+
+
+	.gray_bg_top{ top: 400px; }
+
+	.link--yaku{ color: #D6D6D6; }
+
+	.link--yaku:hover span { color:#FFF ;}
+
+	.link--yaku::before { border-color:#D3D3D3; }
+
+	#cssmenu{ background: none; }
+
+	.menu, .m_menu_bar{     
+		background: #484252;
+    	opacity: 0.6; 
+    	border-bottom: none; 
+    	}
+
+	#tt{display: none;}
+
+	.arr_down{ 
+		top: 15px;
+    	z-index: 100;
+    	 }
+}
+
+@media only screen and (max-width: 768px) { 
+#tt{display: block;}
+
+.sec02{
+	margin-top: 30px;
+}
+
+
+
+
+}

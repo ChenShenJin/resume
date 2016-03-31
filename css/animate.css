@@ -45,6 +45,25 @@
     animation-delay: 4s;
 }
 
+.d5s{
+  -webkit-animation-delay: 5s; /* Chrome, Safari, Opera */
+    animation-delay: 5s;
+}
+
+.d52s{
+  -webkit-animation-delay: 5.2s; /* Chrome, Safari, Opera */
+    animation-delay: 5.2s;
+}
+
+.d54s{
+  -webkit-animation-delay: 5.4s; /* Chrome, Safari, Opera */
+    animation-delay: 5.4s;
+}
+
+.d57s{
+  -webkit-animation-delay: 5.7s; /* Chrome, Safari, Opera */
+    animation-delay: 5.7s;
+}
 .s {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;

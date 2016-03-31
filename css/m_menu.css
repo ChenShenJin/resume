@@ -1,0 +1,117 @@
+.m_menu {
+	position: fixed;
+	top: 0;
+	right: -700px;
+	bottom: 0;
+	line-height: 100vh;
+	width: 350px;
+	z-index: 11;
+	-webkit-filter: url("#blur");
+}
+
+.menu-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: #3E3D40;
+	transform-origin: 100% 0;
+}
+
+.menu-items {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	/*vertical-align: middle;*/
+	line-height: 1;
+}
+
+.menu-item {
+	display: block;
+	color: #fff;
+	font-size: 24px;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	padding-left: 60px;
+	text-align: left;
+}
+
+.menu-toggle {
+	position: relative;
+    margin: 18px;
+    z-index: 100;
+    float: right;
+    display: block;
+    width: 36px;
+    height: 7px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    right: 0px;
+    display: block;
+    -webkit-transform: scale(0.7);
+	   -moz-transform: scale(0.7);
+	    -ms-transform: scale(0.7);
+	     -o-transform: scale(0.7);
+	        transform: scale(0.7);
+}
+
+.menu-toggle span {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #ADACAC;
+    font-size: 0px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	
+}
+
+button{
+	border-color: none;
+}
+
+.menu-open.menu-toggle span {
+	background-color: transparent;
+}
+
+.menu-toggle span:before,
+.menu-toggle span:after {
+	
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #ADACAC;
+	content: '';
+	-webkit-transition: -webkit-transform 0.2s;
+	transition: transform 0.2s;
+}
+
+.menu-toggle span:before {
+	-webkit-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+.menu-toggle span:after {
+	-webkit-transform: translateY(10px);
+	transform: translateY(10px);
+}
+
+.menu-open.menu-toggle span:before {
+	-webkit-transform: translateY(0) rotate(45deg);
+	transform: translateY(0) rotate(45deg);
+}
+
+.menu-open.menu-toggle span:after {
+	-webkit-transform: translateY(0) rotate(-45deg);
+	transform: translateY(0) rotate(-45deg);
+}
