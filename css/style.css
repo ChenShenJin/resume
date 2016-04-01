@@ -445,6 +445,11 @@ h6{ color: #949494; }
 	z-index: -1;	
 }
 
+.contact_iframe{
+	width: 100%;
+	height: 240px;
+}
+
 .fb{
 	background: #9EA8BD;
 	height: 40px;

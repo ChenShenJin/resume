@@ -146,9 +146,15 @@
 	#chart01 .highcharts-title{ top: 30px !important; }
 }
 
-
+@media only screen and (max-width: 899px) {
+.contact_iframe{
+		height: 470px;
+	}
+}
 
 @media only screen and (max-width: 48em) { /* 13 / 624 */ /*768px*/
+	
+
 	.list__item{
 		margin-left: -47%;
 	}
