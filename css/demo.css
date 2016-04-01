@@ -2,24 +2,24 @@
 	font-family: 'codropsicons';
 	font-weight: normal;
 	font-style: normal;
-	src: url('../fonts/codropsicons/codropsicons.eot');
-	src: url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'), url('../fonts/codropsicons/codropsicons.woff') format('woff'), url('../fonts/codropsicons/codropsicons.ttf') format('truetype'), url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+	src: url('http://goodwill-design.com/temp/2016/fonts/codropsicons/codropsicons.eot');
+	src: url('http://goodwill-design.com/temp/2016/fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'), url('../fonts/codropsicons/codropsicons.woff') format('woff'), url('../fonts/codropsicons/codropsicons.ttf') format('truetype'), url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
 }
 
 @font-face {
 	font-family: 'knarfart';
 	font-weight: normal;
 	font-style: normal;
-	src: url('../fonts/knarfart/knarfart-webfont.eot');
-	src: url('../fonts/knarfart/knarfart-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/knarfart/knarfart-webfont.woff2') format('woff2'), url('../fonts/knarfart/knarfart-webfont.woff') format('woff'), url('../fonts/knarfart/knarfart-webfont.ttf') format('truetype'), url('../fonts/knarfart/knarfart-webfont.svg#knarfart') format('svg');
+	src: url('http://goodwill-design.com/temp/2016/fonts/knarfart/knarfart-webfont.eot');
+	src: url('http://goodwill-design.com/temp/2016/fonts/knarfart/knarfart-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/knarfart/knarfart-webfont.woff2') format('woff2'), url('../fonts/knarfart/knarfart-webfont.woff') format('woff'), url('../fonts/knarfart/knarfart-webfont.ttf') format('truetype'), url('../fonts/knarfart/knarfart-webfont.svg#knarfart') format('svg');
 }
 
 @font-face {
 	font-family: 'morse_coderegular';
 	font-weight: normal;
 	font-style: normal;
-	src: url('../fonts/morse/m0rse-webfont.eot');
-	src: url('../fonts/morse/m0rse-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/morse/m0rse-webfont.woff2') format('woff2'), url('../fonts/morse/m0rse-webfont.woff') format('woff'), url('../fonts/morse/m0rse-webfont.ttf') format('truetype'), url('../fonts/morse/m0rse-webfont.svg#morse_coderegular') format('svg');
+	src: url('http://goodwill-design.com/temp/2016/fonts/morse/m0rse-webfont.eot');
+	src: url('http://goodwill-design.com/temp/2016/fonts/morse/m0rse-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/morse/m0rse-webfont.woff2') format('woff2'), url('../fonts/morse/m0rse-webfont.woff') format('woff'), url('../fonts/morse/m0rse-webfont.ttf') format('truetype'), url('../fonts/morse/m0rse-webfont.svg#morse_coderegular') format('svg');
 }
 
 
