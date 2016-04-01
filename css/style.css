@@ -410,7 +410,9 @@ h6{ color: #949494; }
     color: #fff;
     font-weight: bold;
 	 }
-
+.active:hover{
+color:#fff;
+}
 .gotop{
 	display: none;
 	width: 50px;
