@@ -267,6 +267,9 @@ html{ height: 100%; }
     line-height: 24px;
 }
 
+.lg-sub-html h4 a{
+	color: #AEA0D4;
+}
 h5 { font-weight: bold; }
 h6{ color: #949494; }
 .arr_down{
@@ -504,6 +507,10 @@ svg>text:last-child
 { fill:#A073A7 !important; }
 #highcharts-4>svg>.highcharts-series-group>.highcharts-series-2>rect
 { fill:#59708D !important; }
+#highcharts-4>svg>.highcharts-series-group>.highcharts-series-3>rect
+{ fill:#3A93D2 !important; }
+
+
 
 
 
@@ -513,6 +520,9 @@ svg>text:last-child
 { fill:#A073A7 !important; }
 #highcharts-4>svg>.highcharts-series-group>.highcharts-series-4>path:nth-child(3)
 { fill:#59708D !important; }
+#highcharts-4>svg>.highcharts-series-group>.highcharts-series-4>path:nth-child(4)
+{ fill:#3A93D2 !important; }
+
 
 .highcharts-legend>g>g>.highcharts-legend-item:nth-child(1)>rect
 { fill:#6857A7 !important; }
@@ -520,6 +530,11 @@ svg>text:last-child
 { fill:#A073A7 !important; }
 .highcharts-legend>g>g>.highcharts-legend-item:nth-child(3)>rect
 { fill:#59708D !important; }
+.highcharts-legend>g>g>.highcharts-legend-item:nth-child(4)>rect
+{ fill:#3A93D2 !important; }
+
+
+
 
 .cl{ clear: both; }
 
