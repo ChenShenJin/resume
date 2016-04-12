@@ -195,8 +195,9 @@
   padding: 10px 40px;
   position: fixed;
   right: 0;
-  text-align: center;
+  text-align: left;
   z-index: 1080;
+  width: 90%;
 }
 .lg-sub-html h4 {
   margin: 0;
