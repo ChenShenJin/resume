@@ -346,6 +346,11 @@
     
 @media only screen and (max-width: 30em) { /* 13 / 390 */ /*480px*/
 
+	.videoplayer{
+		width: 100%;
+		margin:0px auto;
+	}
+
 	.main > section{ margin-bottom: 30px; }
 	.list__item{
 		margin-left: -47%;

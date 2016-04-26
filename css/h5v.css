@@ -1,0 +1,112 @@
+﻿.videoplayer{
+	width: 80%;
+	margin:0px auto;
+}
+
+
+
+.videoplayer-video{
+	width: 100%;
+}
+
+/* 進度列 */
+.videoplayer-cap {
+	top: -64px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+.videoplayer-bar {
+	margin: 6px 0px;
+    /* width: 554px; */
+    height: 5px;
+    border: solid 1px #A89FB5;
+    background: #5E5C88;
+}
+
+.videoplayer-video video{
+	width: 100%;
+}
+.videoplayer-bar .videoplayer-bar-played {
+	width: 100%;
+	height: 100%;
+    background: #FFFFFF;
+}
+
+/* 控制器 */
+.videoplayer-ui {
+	width: 100%;
+    height: 47px;
+    background: #1D082B;
+    top: -70px;
+    position: relative;
+    opacity: 0.6;
+}
+
+.videoplayer-rewind,
+.videoplayer-playpause,
+.videoplayer-time {
+	float:left;
+}
+
+.videoplayer-volume {
+	float:right;
+}
+
+/* 播放／停止按鈕 */
+.videoplayer-playpause a {
+	display: block;
+    margin: 5px 0 15px 20px;
+    width: 40px;
+    height: 40px;
+    background: url("../img/controls.svg") left -3px;
+    text-indent: -9999px;
+    background-size: 270%;
+    
+
+}
+
+.videoplayer-playing .videoplayer-playpause a {
+	background:url("../img/controls.svg") left 37px;
+	background-size: 270%;
+}
+
+/* 倒帶按鈕 */
+.videoplayer-rewind a {
+	display: block;
+    margin: 8px 11px;
+    width: 25px;
+    height: 25px;
+    background: url("../img/controls.svg") -40px 2px;
+    text-indent: -9999px;
+    background-size: 120px;
+}
+
+/* 播放時間 */
+.videoplayer-time {
+	width: 100px;
+    height: 100%;
+    font-size: 13px;
+    line-height: 50px;
+    color: #FFF;
+}
+
+/* 音量按鈕 */
+.videoplayer-volume a {
+	display: block;
+    margin: 8px 10px;
+    width: 38px;
+    height: 30px;
+    background: url("../img/controls.svg") right top;
+    text-indent: -9999px;
+    background-size: 80px;
+}
+
+.videoplayer-muted .videoplayer-volume a {
+	background:url("../img/controls.svg") right bottom;
+	background-size: 80px;
+}
+
+/* ------- 頁尾 ------- */
+
