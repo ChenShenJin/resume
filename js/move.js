@@ -29,19 +29,38 @@ $(function(){
 		return false;//取消#字號超連結之問題
 	});
 
+	$('.videoplayer').hide();
+
 	$('#tab01').click(function(){
 		$('#gl01').show();
 		$('#gl02').hide();
+		$('#gl03').hide();
+		$('.videoplayer').hide();
 		$('#tab01').show().addClass('active');;
 		$('#tab02').removeClass('active');
+		$('#tab03').removeClass('active');
 		return false;//取消#字號超連結之問題
 	});
 
 	$('#tab02').click(function(){
 		$('#gl02').show();
 		$('#gl01').hide();
+		$('.videoplayer').hide();
+		$('#gl03').hide();
 		$('#tab02').show().addClass('active');
 		$('#tab01').removeClass('active');
+		$('#tab03').removeClass('active');
+		return false;//取消#字號超連結之問題
+	});
+
+	$('#tab03').click(function(){
+		$('#gl03').show();
+		$('#gl01').hide();
+		$('#gl02').hide();
+		$('.videoplayer').show();
+		$('#tab03').show().addClass('active');
+		$('#tab01').removeClass('active');
+		$('#tab02').removeClass('active');
 		return false;//取消#字號超連結之問題
 	});
 
