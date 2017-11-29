@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My A-Frame Scene</title>
+  <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+
+  <script>
+    var box = document.querySelector('a-box');
+    box.addEventListener( "mouseenter", function(){
+        box.setAttribute( "scale", {
+            x: 3,
+            y: 3,
+            z: 3
+        });
+    });
+
+
+
+
+    // AFRAME.registerComponent('mouseenter', {
+    //     schema: {
+    //         to: {default: '2.5 2.5 2.5'},
+    //         leave: {default: '1 1 1'}
+    //     },
+    //     init: function () {
+    //         var data = this.data;
+    //         // 在這邊設定 listener
+    //         this.el.addEventListener('mouseenter', function () {
+    //             this.setAttribute('scale', data.to);
+    //         });
+    //         this.el.addEventListener('mouseleave', function () {
+    //             this.setAttribute('scale', data.leave);
+    //         });
+    //     }
+    // });
+</script>
+
+</head>
+ 
+<body>
+  <a-scene inspector="url: https://aframe.io/releases/0.3.0/aframe-inspector.min.js">
+  	<a-assets>
+  		<img id="sky" src="bg.jpg" alt="" >
+        <img id="textureA" src="img/textureA.jpg">
+        <img id="textureB" src="img/textureB.jpg">
+        <img id="textureC" src="img/textureC.png">
+      <!-- <img id="groundTexture" src="floor.jpg"> -->
+  	</a-assets>
+
+    <a-box src="#textureA"
+        scale="2 2 2"
+        position="7 1.5 -12"
+        rotation="0 0 0">
+        <a-animation
+            attribute="rotation"
+            to="270 90 0"
+            direction="alternate"
+            dur="2000"
+            repeat="indefinite">        
+        </a-animation>
+        <a-animation
+            attribute="position"
+            to="20 10 0"
+            direction="alternate"
+            dur="2000"
+            repeat="indefinite">        
+        </a-animation>
+        <a-animation
+            attribute="scale"
+            to="0 0 0"
+            direction="normal"
+            dur="200"
+            begin="click"
+            repeat="0">        
+        </a-animation>
+    </a-box>
+
+    <a-box src="#textureA"
+        scale="2 2 2"
+        position="15 2.5 3"
+        rotation="0 0 0">
+        <a-animation
+            attribute="rotation"
+            to="270 90 0"
+            direction="alternate"
+            dur="2000"
+            repeat="indefinite">        
+        </a-animation>
+        <a-animation
+            attribute="scale"
+            to="0 0 0"
+            direction="normal"
+            dur="200"
+            begin="click"
+            repeat="0">        
+        </a-animation>
+    </a-box>
+
+
+
+    <a-circle color="#CCC" radius="20"></a-circle>
+
+    <a-circle src="#textureB" radius="8" rotation="-90 0 0"></a-circle>
+
+    <a-cylinder class="cc" color="#7751BA" position="1 2 -12" rotation="30 405 0" scale="1 1 1"  mouseenter="to: 1.5 1.5 1.5">
+      <a-animation attribute="rotation" to="360 360 0" direction="alternate" dur="2000"
+        repeat="indefinite"></a-animation>
+      <a-animation attribute="rotation" begin="click" dur="2000" to="30 405 0"></a-animation>
+      <a-animation attribute="position" begin="click" to="-4 15 -12" direction="alternate" dur="2000"></a-animation>
+    </a-cylinder>
+    <a-sky src="#sky"></a-sky>
+    <!-- <a-plane src="#groundTexture" rotation="-90 0 0" width="30" height="30" color="#FFFFFF"></a-plane> -->
+    <!-- <a-light type="ambient" intensity="1" color="#FFFFFF"></a-light> -->
+    <a-light type="point" intensity="1" position="2 100 4" color="#EBF3FF"></a-light>
+
+      <a-camera>
+          <a-cursor color="#FFFE00"></a-cursor>
+      </a-camera>
+  </a-scene>
+
+
+</body>
+</html>
