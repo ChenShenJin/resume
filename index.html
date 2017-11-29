@@ -1,306 +1,123 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8" />
-		<meta content="IE=edge"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1"> 
-		<title>Jin's Zone</title>
-		<meta name="keywords" content="陳申金, Jin's Zone, 個人網頁, 好感雲端美學,好感,雲端美學, 網頁,網頁設計,設計,設計師,App,美學,行銷,企劃,品牌,網站設計,Design,GoodWill Design,插畫,繪圖,視覺傳達設計,介面設計,形象,活動企劃,生活美學,企業視覺形象,資訊工程,程式,商業設計,平面設計,雲端經濟,好感度,文化,文化創意產業,UI Designer,UX,系統設計,後台,資料庫,後端,PHP,javascripts,JAVA,android,ios,DW,Dreamweaver,Illustrator,Photoshop,Animation,動畫,影片剪接" />
-		<meta name="author" content="Codrops" />
-		<link rel="shortcut icon" href="favicon.ico">
+<html lang="en">
+<head>
+  <title>My A-Frame Scene</title>
+  <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+
+  <script>
+    var box = document.querySelector('a-box');
+    box.addEventListener( "mouseenter", function(){
+        box.setAttribute( "scale", {
+            x: 3,
+            y: 3,
+            z: 3
+        });
+    });
 
 
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
-		<link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'>
-		<!--[if IE]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-
-		
 
 
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/animate_jin.css">
-		<link rel="stylesheet" href="css/animate.css">
-		<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-
-
-		<!--charts-->
-		<script src="https://code.highcharts.com/highcharts.js"></script>
-		<script src="https://code.highcharts.com/highcharts-more.js"></script>
-		<script src="https://code.highcharts.com/highcharts-3d.js"></script>
-		<script src="https://code.highcharts.com/modules/exporting.js"></script>
-		<script src="js/charts.js"></script> 
-
-		<!--m_menu-->
-		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/m_menu.css" />
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
-
-
-		<!--scroll-->
-		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script> 
-
-		<!--menu-->
-		<link rel="stylesheet" href="css/menu.css">
-		<link rel="stylesheet" href="css/linkstyles.css">
-
-
-<script>
-(function() {
-    if( window.innerWidth > 768 ) {
-        var theScript = document.createElement('script');
-            theScript.type = 'text/javascript';
-            theScript.src = 'js/for_menu.js';
-
-        var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(theScript, s);
-
-        $(document).ready(function(event){        // 搜尋本網頁 
-             $(".menu-toggle").click(function(){        // 當點下 hyperlink 時
-	             $("#gowork").attr("onclick","javascript:location.href='portfolio.html'");      // 把超連結中的 target 屬性都套用 另開新頁的方式
-	  	       });
-         });
-
-    }else{
-    	var theScript = document.createElement('script');
-            theScript.type = 'text/javascript';
-            theScript.src = 'js/for_m_menu.js';
-
-        var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(theScript, s);
-
-        $(document).ready(function(event){        // 搜尋本網頁 
-             $(".menu-toggle").click(function(){        // 當點下 hyperlink 時
-	             $("#gowork").attr("onclick","javascript:location.href='portfolio.html#a1'");      // 把超連結中的 target 屬性都套用 另開新頁的方式
-	  	       });
-         });
-
-    }
-})();
+    // AFRAME.registerComponent('mouseenter', {
+    //     schema: {
+    //         to: {default: '2.5 2.5 2.5'},
+    //         leave: {default: '1 1 1'}
+    //     },
+    //     init: function () {
+    //         var data = this.data;
+    //         // 在這邊設定 listener
+    //         this.el.addEventListener('mouseenter', function () {
+    //             this.setAttribute('scale', data.to);
+    //         });
+    //         this.el.addEventListener('mouseleave', function () {
+    //             this.setAttribute('scale', data.leave);
+    //         });
+    //     }
+    // });
 </script>
 
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-76306596-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-		
-
-
-
-		<link rel="stylesheet" type="text/css" href="css/rwd.css" />
-		<script src="js/move.js"></script> 
-
-
-		<script>
-			document.documentElement.className = 'js';
-		</script>
-		<script src="js/segment.min.js"></script>
-		<script src="js/d3-ease.v0.6.js"></script>
-		<script src="js/letters.js"></script>
-
-	</head>
+</head>
+ 
 <body>
+  <a-scene inspector="url: https://aframe.io/releases/0.3.0/aframe-inspector.min.js">
+  	<a-assets>
+  		<img id="sky" src="bg.jpg" alt="" >
+        <img id="textureA" src="img/textureA.jpg">
+        <img id="textureB" src="img/textureB.jpg">
+        <img id="textureC" src="img/textureC.png">
+      <!-- <img id="groundTexture" src="floor.jpg"> -->
+  	</a-assets>
 
+    <a-box src="#textureA"
+        scale="2 2 2"
+        position="7 1.5 -12"
+        rotation="0 0 0">
+        <a-animation
+            attribute="rotation"
+            to="270 90 0"
+            direction="alternate"
+            dur="2000"
+            repeat="indefinite">        
+        </a-animation>
+        <a-animation
+            attribute="position"
+            to="20 10 0"
+            direction="alternate"
+            dur="2000"
+            repeat="indefinite">        
+        </a-animation>
+        <a-animation
+            attribute="scale"
+            to="0 0 0"
+            direction="normal"
+            dur="200"
+            begin="click"
+            repeat="0">        
+        </a-animation>
+    </a-box>
 
-	<div class="content demo-1">
-		<div id="large-header" class="large-header animated fadeIn d1s">
-			<canvas id="demo-canvas" class="animated fadeIn d3s"></canvas>
-			
-			<ul class="list  fadeIn d2s">
-				<li class="list__item">
-					<h3 class="list__text">
-					jinls Zone</h3>
-				</li>
-			</ul>
-			<div class="arr_down animated arr_down_move arr_go" id=""></div>
-		</div>
-	</div>
-
-
-<div class="gray_bg_top">
-	<img src="img/bg_gray.svg" alt="">
-	<div class="cl"></div>
-</div>
-		
-
-
-		
-<div class="menu">
-
-	<div id='cssmenu'>
-	<a class="link link--yaku arr_go" href="#">
-	<span>A</span><span>b</span><span>o</span><span>u</span><span>t</span>	
-	<span> </span><span>M</span><span>e</span>				
-	</a>
-
-	<a class="link link--yaku" href="portfolio.html">
-	<span>P</span><span>o</span><span>r</span><span>t</span><span>f</span><span>o</span><span>l</span><span>i</span><span>o</span>			
-	</a>
-
-	<a class="link link--yaku go3" href="#">
-	<span>S</span><span>k</span><span>i</span><span>l</span><span>l</span>
-	<span> </span><span>C</span><span>h</span><span>a</span><span>r</span><span>t</span>			
-	</a>
-
-	<a class="link link--yaku go4" href="#">
-	<span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span>
-	<span> </span><span>M</span><span>e</span>				
-	</a>
-
-
-	</div>
-	<div class="menu_logo" ><img src="img/logo.svg" alt="" id="logo"></div>
-</div>
-
-<div class="m_menu_bar">
-	<div class="m_menu">
-		<div class="menu-bg js-blur"></div>
-		<nav class="menu-items">
-			<a href="#" class="menu-item arr_go">
-				<span class="js-blur">About Me</span>
-			</a>
-			<a class="menu-item" id="gowork">
-				<span class="js-blur">Portfolio</span>
-			</a>
-			<a href="#" class="menu-item go3">
-				<span class="js-blur">Skill Chart</span>
-			</a>
-			<a href="#" class="menu-item go4">
-				<span class="js-blur">Contact Me</span>
-			</a>
-		</nav>
-	</div>
-	<button class="menu-toggle"><span></span></button>	
-	<div class="menu_logo" ><img src="img/logo.svg" alt="" id="logo"></div>
-</div>
+    <a-box src="#textureA"
+        scale="2 2 2"
+        position="15 2.5 3"
+        rotation="0 0 0">
+        <a-animation
+            attribute="rotation"
+            to="270 90 0"
+            direction="alternate"
+            dur="2000"
+            repeat="indefinite">        
+        </a-animation>
+        <a-animation
+            attribute="scale"
+            to="0 0 0"
+            direction="normal"
+            dur="200"
+            begin="click"
+            repeat="0">        
+        </a-animation>
+    </a-box>
 
 
 
+    <a-circle color="#CCC" radius="20"></a-circle>
 
-<a id="a1"></a>
+    <a-circle src="#textureB" radius="8" rotation="-90 0 0"></a-circle>
 
-<div class="container">
-<div class="home-page main sec01">
-	<section class="grid-wrap" >
-	<div class="grid col-one-half mq2-col-full">
-		<h1>About Me</h1>
-		<h5>陳申金</h5>
-		<ul class="leftline">
-			<li>1986/06/04</li>
-			<li>從視覺傳達設計跨足前端領域的視覺工程師，沈浸在美學與程式邏輯交織的漣漪中，樂此不疲。
-			<br>感興趣領域：電子商務、軟體服務、使用者體驗...等，未來希望有機會朝[全端工程師]、[成長駭客]、[UX設計師]等方向邁進。</li>
-		</ul>
+    <a-cylinder class="cc" color="#7751BA" position="1 2 -12" rotation="30 405 0" scale="1 1 1"  mouseenter="to: 1.5 1.5 1.5">
+      <a-animation attribute="rotation" to="360 360 0" direction="alternate" dur="2000"
+        repeat="indefinite"></a-animation>
+      <a-animation attribute="rotation" begin="click" dur="2000" to="30 405 0"></a-animation>
+      <a-animation attribute="position" begin="click" to="-4 15 -12" direction="alternate" dur="2000"></a-animation>
+    </a-cylinder>
+    <a-sky src="#sky"></a-sky>
+    <!-- <a-plane src="#groundTexture" rotation="-90 0 0" width="30" height="30" color="#FFFFFF"></a-plane> -->
+    <!-- <a-light type="ambient" intensity="1" color="#FFFFFF"></a-light> -->
+    <a-light type="point" intensity="1" position="2 100 4" color="#EBF3FF"></a-light>
 
-		<a href="https://www.facebook.com/csjindesign" target="_blank"><div class="fb">
-		<img src="img/icon-fb.svg" alt="" class="fb_icon">
-		More About Me
-		</div></a>
-		
-		
-		
-	</div>
-			
-	
-	<div class="grid col-one-half mq2-col-full sec1_2">
-		<h5>學歷</h5>
-		<ul class="leftline">
-			<li>高中：國立竹山高中 廣告設計科</li>
-			<li>大學：國立雲林科技大學 視覺傳達設計系</li>
-			<li>研究所：國立臺灣師範大學 設計研究所</li>
-		</ul>
-<br>
-		<h5>經歷</h5>
-		<ul class="leftline">
-			<li>2012／05：Bone果舖創意 / 行銷企劃</li>
-			<li>2012／09：東森得易購股份有限公司 / 網頁設計師</li>
-			<li>2013／06：康廷工程顧問有限公司 資訊工程師 / 前端工程師</li>
-			<li>until now...</li>
-		</ul>
-	</div>
-	</section>	
-</div><!--home-->
-</div><!--container-->
+      <a-camera>
+          <a-cursor color="#FFFE00"></a-cursor>
+      </a-camera>
+  </a-scene>
 
 
-
-
-<a id="a3"></a>	
-<div class="container sec03">
-
-
-<div class="home-page main">
-	<section class="grid-wrap" >
-		
-	<div class="grid col-one-half mq2-col-full">
-		<h1>Skill Chart</h1>
-		<div id="chart01"></div>
-	</div>
-
-	<div class="grid col-one-half mq2-col-full">
-		<div id="chart02"></div>
-	</div>
-	
-	
-
-	
-
-	<div id="chart03"></div>
-
-
-		
-	</section>	
-</div><!--home-->
-</div><!--container-->
-
-<a id="a4"></a>
-
-<div class="container sec04">
-
-
-
-<div class="home-page main">
-	<section class="grid-wrap" >
-
-		<h1>Contact Me</h1>
-
-		<iframe src="http://goodwill-design.com/contact.html#" class="contact_iframe" frameborder="0" scrolling="no"></iframe>
-
-		
-	
-	
-	</section>	
-</div><!--home-->
-</div><!--container-->
-
-
-<div class="footer_top">
-	<img src="img/footer.svg" alt="">
-</div>
-<div class="footer">
-	Jin | 2016
-</div>
-<div class="gotop"></div>
-
-
-
-
-
-<script src="js/menu.js"></script>
-
-<script src="js/demo-2.js"></script>
-
-<script src="js/TweenLite.min.js"></script>
-<script src="js/EasePack.min.js"></script>
-<script src="js/rAF.js"></script>
-<script src="js/demo-1.js"></script>
-	</body>
+</body>
 </html>
