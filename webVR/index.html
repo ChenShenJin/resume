@@ -44,8 +44,19 @@
         <img id="textureA" src="img/textureA.jpg">
         <img id="textureB" src="img/textureB.jpg">
         <img id="textureC" src="img/textureC.png">
+
+        <a-asset-item id="deer" src="dae/deer.dae"></a-asset-item>
+        <a-asset-item id="wolf" src="dae/Wolf.dae"></a-asset-item>
+        <a-asset-item id="house" src="dae/House.obj"></a-asset-item>
+        <a-asset-item id="house2" src="dae/House.mtl"></a-asset-item>
       <!-- <img id="groundTexture" src="floor.jpg"> -->
   	</a-assets>
+
+    <a-collada-model color="#fffff" src="#deer" position="15 1 15" rotation="0 120 0"></a-collada-model>
+
+    <a-collada-model src="dae/Wolf.dae" scale="2 2 2" position="3 0 -3"  rotation="-90 160 90"></a-collada-model>
+
+    <a-collada-model color="#fffff" src="#house" position="-6 0 2" rotation="-90 0 90"></a-collada-model>
 
     <a-box src="#textureA"
         scale="2 2 2"
@@ -96,11 +107,43 @@
         </a-animation>
     </a-box>
 
+    <a-box src="#textureA"
+        scale="2 2 2"
+        position="25 2.5 13"
+        rotation="0 0 0">
+        <a-animation
+            attribute="rotation"
+            to="270 90 0"
+            direction="alternate"
+            dur="2000"
+            repeat="indefinite">        
+        </a-animation>
+        <a-animation
+            attribute="scale"
+            to="0 0 0"
+            direction="normal"
+            dur="200"
+            fill="forwards"
+            begin="click"
+            repeat="0">        
+        </a-animation>
+    </a-box>
+
+
+    <a-cone
+        color="#DDC79B"
+        src="#textureC"
+        radius-bottom="1"
+        radius-top="0"
+        position="7 1 -7"
+        >
+    </a-cone>
+
 
 
     <a-circle color="#CCC" radius="20"></a-circle>
 
-    <a-circle src="#textureB" radius="8" rotation="-90 0 0"></a-circle>
+    <a-circle src="#textureB" radius="8" rotation="-90 0 0" position="3 -1 3"></a-circle>
 
     <a-cylinder class="cc" color="#7751BA" position="1 2 -12" rotation="30 405 0" scale="1 1 1"  mouseenter="to: 1.5 1.5 1.5">
       <a-animation attribute="rotation" to="360 360 0" direction="alternate" dur="2000"
@@ -111,7 +154,7 @@
     <a-sky src="#sky"></a-sky>
     <!-- <a-plane src="#groundTexture" rotation="-90 0 0" width="30" height="30" color="#FFFFFF"></a-plane> -->
     <!-- <a-light type="ambient" intensity="1" color="#FFFFFF"></a-light> -->
-    <a-light type="point" intensity="1" position="2 100 4" color="#EBF3FF"></a-light>
+    <a-light type="point" intensity="1.5" position="2 100 4" color="#EBF3FF"></a-light>
 
       <a-camera>
           <a-cursor color="#FFFE00"></a-cursor>
