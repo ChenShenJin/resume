@@ -40,7 +40,11 @@
 <body>
   <a-scene inspector="url: https://aframe.io/releases/0.3.0/aframe-inspector.min.js">
   	<a-assets>
-  		<img id="sky" src="bg.jpg" alt="" >
+  		<img id="bg" src="img/bg.jpg" alt="" >
+        <img id="bg1" src="img/bg1.jpg" alt="" >
+        <img id="bg2" src="img/bg2-2.jpg" alt="" >
+        <img id="bg3" src="img/bg3.jpg" alt="" >
+        <img id="bg4" src="img/bg4.jpg" alt="" >
         <img id="textureA" src="img/textureA.jpg">
         <img id="textureB" src="img/textureB.jpg">
         <img id="textureC" src="img/textureC.png">
@@ -52,12 +56,12 @@
       <!-- <img id="groundTexture" src="floor.jpg"> -->
   	</a-assets>
 
-    <a-collada-model color="#fffff" src="#deer" position="15 1 15" rotation="0 120 0"></a-collada-model>
+   <!--  <a-collada-model color="#fffff" src="#deer" position="15 1 15" rotation="0 120 0"></a-collada-model>
 
     <a-collada-model src="dae/Wolf.dae" scale="2 2 2" position="3 0 -3"  rotation="-90 160 90"></a-collada-model>
 
     <a-collada-model color="#fffff" src="#house" position="-6 0 2" rotation="-90 0 90"></a-collada-model>
-
+ -->
     <a-box src="#textureA"
         scale="2 2 2"
         position="7 1.5 -12"
@@ -71,7 +75,7 @@
         </a-animation>
         <a-animation
             attribute="position"
-            to="20 10 0"
+            to="10 4 -8"
             direction="alternate"
             dur="2000"
             repeat="indefinite">        
@@ -143,15 +147,38 @@
 
     <a-circle color="#CCC" radius="20"></a-circle>
 
-    <a-circle src="#textureB" radius="8" rotation="-90 0 0" position="3 -1 3"></a-circle>
+    <!-- <a-circle src="#textureB" radius="8" rotation="-90 -2 0" position="3 -1 3"></a-circle> -->
 
-    <a-cylinder class="cc" color="#7751BA" position="1 2 -12" rotation="30 405 0" scale="1 1 1"  mouseenter="to: 1.5 1.5 1.5">
+    <a-cylinder class="cc" color="#7751BA" position="-40 10 0" rotation="30 405 0" scale="1 1 1"  mouseenter="to: 1.5 1.5 1.5">
       <a-animation attribute="rotation" to="360 360 0" direction="alternate" dur="2000"
         repeat="indefinite"></a-animation>
       <a-animation attribute="rotation" begin="click" dur="2000" to="30 405 0"></a-animation>
-      <a-animation attribute="position" begin="click" to="-4 15 -12" direction="alternate" dur="2000"></a-animation>
+      <a-animation
+            attribute="scale"
+            to="3 3 3"
+            direction="normal"
+            dur="200"
+            begin="click"
+            repeat="0">        
+        </a-animation>
+        <a-animation
+            attribute="rotate"
+            to="3 3 3"
+            direction="normal"
+            dur="200"
+            begin="click"
+            repeat="0">        
+        </a-animation>
+        <a-animation
+            attribute="position"
+            to="2 1 -2"
+            direction="normal"
+            dur="200"
+            begin="click"
+            repeat="0">        
+        </a-animation>
     </a-cylinder>
-    <a-sky src="#sky"></a-sky>
+    <a-sky src="#bg3"></a-sky>
     <!-- <a-plane src="#groundTexture" rotation="-90 0 0" width="30" height="30" color="#FFFFFF"></a-plane> -->
     <!-- <a-light type="ambient" intensity="1" color="#FFFFFF"></a-light> -->
     <a-light type="point" intensity="1.5" position="2 100 4" color="#EBF3FF"></a-light>
